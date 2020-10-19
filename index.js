@@ -9,7 +9,7 @@ const userRouter = require('./routers/user')
 
 
 const app = express()
-const port = process.env.PORT 
+const port = process.env.PORT || 3000
 
 
 
