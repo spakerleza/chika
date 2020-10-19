@@ -18,8 +18,8 @@ router.get('/', (req,res) => {
 
 router.post('/users', async  (req, res) => {
     const user = new User(req.body)
-    print_r(user);
-    return;
+    console.log(user);
+ 
     try {
         await user.save()
         TrailBlazersUser(user.email, user.name)
